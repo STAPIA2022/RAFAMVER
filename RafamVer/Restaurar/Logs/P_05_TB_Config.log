@@ -1,0 +1,61 @@
+--- Creando Sinonimo para CONFIG ----------------------------
+CREATE PUBLIC SYNONYM CONFIG FOR owner_rafam.config
+*
+ERROR at line 1:
+ORA-01031: insufficient privileges 
+
+
+--- Actualizando parametros DATOS PARA LA BASE -----------------------
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row deleted.
+
+--- Actualizando parametro RAFAM_HOME -----------------------
+
+1 row updated.
+
+--- Actualizando parametro OS_ORACLE -----------------------
+
+2 rows updated.
+
+--- Actualizando parametro MAQUINA_MOTOR -----------------------
+
+1 row updated.
+
+--- Actualizando parametros PATH% ---------------------------
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+--- Actualizando Tabla CAS_IMPEXP_CAB - Path_Archivo --------
+
+66 rows updated.
+
+
+130 rows updated.
+
+
+Commit complete.
+

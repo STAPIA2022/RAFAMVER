@@ -1,0 +1,177 @@
+SQL> @AuxSQL\AuxValidar.sql;
+SQL> 
+SQL> ALTER PROCEDURE TES_OTB_ACUMULA COMPILE;
+
+Warning: Procedure altered with compilation errors.
+
+SQL> ALTER FUNCTION PER_F_CANTMESES_GANDECRETO336 COMPILE;
+
+Warning: Function altered with compilation errors.
+
+SQL> ALTER FUNCTION PER_GET_PERMISO_USR_RPT_LOCAL COMPILE;
+
+Warning: Function altered with compilation errors.
+
+SQL> ALTER FUNCTION ING_F_ROD_CALC_X_VAL_ARBA COMPILE;
+
+Warning: Function altered with compilation errors.
+
+SQL> ALTER FUNCTION PER_F_MENORBRUTO_GANDECRETO336 COMPILE;
+
+Warning: Function altered with compilation errors.
+
+SQL> ALTER PROCEDURE PER_P_GRID_GCIAS_CALCULO COMPILE;
+
+Warning: Procedure altered with compilation errors.
+
+SQL> ALTER PROCEDURE PER_P_GRID_GCIAS_GANREM COMPILE;
+
+Warning: Procedure altered with compilation errors.
+
+SQL> ALTER PROCEDURE PER_GRID_GAN_LEERXML COMPILE;
+
+Warning: Procedure altered with compilation errors.
+
+SQL> ALTER PROCEDURE PER_P_CALC_GAN_DECRETO336_GRID COMPILE;
+
+Warning: Procedure altered with compilation errors.
+
+SQL> ALTER PROCEDURE PER_P_GANANCIAS_RETDECRETO336 COMPILE;
+
+Warning: Procedure altered with compilation errors.
+
+SQL> ALTER PROCEDURE PER_P_EXENTOS_DECRETO336 COMPILE;
+
+Warning: Procedure altered with compilation errors.
+
+SQL> ALTER PROCEDURE PER_P_GANANCIAS_DECRETO336 COMPILE;
+
+Warning: Procedure altered with compilation errors.
+
+SQL> ALTER PROCEDURE PER_INFORME_IMPUT_CTA_VALIDO COMPILE;
+
+Warning: Procedure altered with compilation errors.
+
+SQL> 
+SQL> ALTER PROCEDURE PER_GEN_TMP_IE_IOMA_DETALLE COMPILE;
+
+Warning: Procedure altered with compilation errors.
+
+SQL> ALTER PROCEDURE PER_GEN_TMP_IE_IOMA_SUELDO COMPILE;
+
+Warning: Procedure altered with compilation errors.
+
+SQL> ALTER PROCEDURE PER_LIS_CERT_SERVICIO_P2 COMPILE;
+
+Warning: Procedure altered with compilation errors.
+
+SQL> ALTER PROCEDURE PER_LIS_CERT_SERVICIO COMPILE;
+
+Warning: Procedure altered with compilation errors.
+
+SQL> ALTER PROCEDURE PER_LIQ COMPILE;
+
+Warning: Procedure altered with compilation errors.
+
+SQL> ALTER PROCEDURE PER_LIQ_INS_DET COMPILE;
+
+Warning: Procedure altered with compilation errors.
+
+SQL> ALTER PROCEDURE PER_GRABA_DEDUCCION_GANANCIA COMPILE;
+
+Warning: Procedure altered with compilation errors.
+
+SQL> ALTER PROCEDURE PER_IMPORTAR_NOVEDADES_MASIVAS COMPILE;
+
+Warning: Procedure altered with compilation errors.
+
+SQL> ALTER FUNCTION PER_F_GANANCIA_IMP_RET COMPILE;
+
+Warning: Function altered with compilation errors.
+
+SQL> ALTER PROCEDURE CTR_GEN_TMP_STOCK COMPILE;
+
+Warning: Procedure altered with compilation errors.
+
+SQL> ALTER FUNCTION PER_F_GANANCIA_DACUM_ESCALA COMPILE;
+
+Warning: Function altered with compilation errors.
+
+SQL> ALTER PROCEDURE PER_LIS_GENERA_TMP_AG_RECAT COMPILE;
+
+Warning: Procedure altered with compilation errors.
+
+SQL> ALTER PROCEDURE PER_LIS_GENERA_TMP_SOL_CUENTAS COMPILE;
+
+Warning: Procedure altered with compilation errors.
+
+SQL> 
+SQL> ALTER PROCEDURE PER_LIS_GENERA_TMP_IMPUT_ERR COMPILE;
+
+Warning: Procedure altered with compilation errors.
+
+SQL> ALTER PROCEDURE PER_LIS_GENERA_TMP_LIC_SOL_AG COMPILE;
+
+Warning: Procedure altered with compilation errors.
+
+SQL> ALTER PROCEDURE PER_LIS_GENERA_TMP_FAM_BEN COMPILE;
+
+Warning: Procedure altered with compilation errors.
+
+SQL> ALTER PROCEDURE TES_EXPOR_CANCE_BECAS COMPILE;
+
+Warning: Procedure altered with compilation errors.
+
+SQL> ALTER PROCEDURE TES_IMPORTAR_EXTRACTO_BANC_V2 COMPILE;
+
+Warning: Procedure altered with compilation errors.
+
+SQL> ALTER PROCEDURE TES_EXPOR_CANCE_INTERBANKING COMPILE;
+
+Warning: Procedure altered with compilation errors.
+
+SQL> ALTER FUNCTION ING_GET_PERMISO_USR_RPT_LOCAL COMPILE;
+
+Warning: Function altered with compilation errors.
+
+SQL> 
+SQL> ALTER TRIGGER GRID_TIU_LEGAJOS COMPILE;
+
+Warning: Trigger altered with compilation errors.
+
+SQL> 
+SQL> ALTER PACKAGE PCKGRIDRAFAM COMPILE PACKAGE;
+
+Warning: Package altered with compilation errors.
+
+SQL> 
+SQL> ALTER PACKAGE PCKGRIDRAFAM COMPILE BODY;
+
+Warning: Package Body altered with compilation errors.
+
+SQL> ALTER PACKAGE PK_ROD_MSP COMPILE BODY;
+
+Warning: Package Body altered with compilation errors.
+
+SQL> 
+SQL> SELECT CONSTRAINT_NAME,TABLE_NAME FROM USER_CONSTRAINTS WHERE STATUS='DISABLED';
+
+PER_AGENTES_CONCEPTOS_H_PK     PER_AGENTES_CONCEPTOS_H                                                                  
+FORMULARIO7_CAT_CLAS_FK        FORMULARIO7                                                                              
+CATITEM_CATCLAS_FK             CAT_ITEM                                                                                 
+CATCLASPROP_CATCLAS_FK         CAT_CLAS_PROP                                                                            
+FK_PED_COTI_REF_269_SOLIC_GA   PED_COTIZACIONES_ITEMS                                                                   
+FK_ADJUDICA_REF_260_SOLIC_GA   ADJUDICACIONES_ITEMS                                                                     
+RETENCIONES_EGRESOS_FK         RETENCIONES                                                                              
+GRID_CTA_AFECTAC_FF            GRID_CTA_AFECTAC                                                                         
+FKGRIDESTRUC_PROG              GRID_LEGAJOS                                                                             
+GRID_CTA_AFECTAC_EP            GRID_CTA_AFECTAC                                                                         
+LEGAJOS_LOCNAC_FK              LEGAJOS                                                                                  
+LEGAJOS_LOCALID_FK             LEGAJOS                                                                                  
+SOLGTO_PEDIDOS_FK              SOLIC_GASTOS                                                                             
+
+MENUES_MENUES_FK               MENUES                                                                                   
+TAREASMENUES_MENUES_FK         TAREAS_MENUES                                                                            
+PER_OSOCIALES_FK               PER_OBRA_SOCIAL_FAMILIAR                                                                 
+SQL> 
+SQL> SPOOL OFF;

@@ -1,0 +1,2222 @@
+------------------CREANDO ARCHIVO DE INDICES ------------------
+PROMPT CREANDO ACTA_APERTURA_PED_COTI_FK_IA;                                    
+CREATE INDEX ACTA_APERTURA_PED_COTI_FK_IA ON                                    
+ACTA_APERTURA (EJERCICIO,NRO_COTI)                                              
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000006_FK_IA;                                          
+CREATE INDEX RAFAM_0000000006_FK_IA ON                                          
+ADJUDICACIONES (EJERCICIO,NRO_COTI,COD_PROV)                                    
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000007_FK_IA;                                          
+CREATE INDEX RAFAM_0000000007_FK_IA ON                                          
+ALTA_DEFINITIVA_INVENT_BIE (EJERCICIO,NRO_REM_RECEP,ORDEN)                      
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000008_FK_IA;                                          
+CREATE INDEX RAFAM_0000000008_FK_IA ON                                          
+ALTA_DEFINITIVA_ITEMS_BIE (EJERCICIO,NRO_REM_RECEP)                             
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ALTA_INVENT_FK_IA;                                               
+CREATE INDEX ALTA_INVENT_FK_IA ON                                               
+BIE_HISTO_INVENT (NRO_IDENT)                                                    
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ALTA_PROV_INV_FK_IA;                                             
+CREATE INDEX ALTA_PROV_INV_FK_IA ON                                             
+ALTA_DEFINITIVA_INVENT_BIE (EJERCICIO,NRO_REM_RECEP,ORDEN)                      
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000009_FK_IA;                                          
+CREATE INDEX RAFAM_0000000009_FK_IA ON                                          
+ALTA_PROVISORIA_ITEMS_BIE (EJERCICIO,NRO_REM_RECEP)                             
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000010_FK_IA;                                          
+CREATE INDEX RAFAM_0000000010_FK_IA ON                                          
+ALTA_PROVISORIA_ITEMS_BIE (ESTADO)                                              
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO AMO_EMP_FK_IA;                                                   
+CREATE INDEX AMO_EMP_FK_IA ON                                                   
+AMORTIZACIONES (COD_EMP)                                                        
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO BAJ_DEF_BIE_BAJ_PROV_FK_IA;                                      
+CREATE INDEX BAJ_DEF_BIE_BAJ_PROV_FK_IA ON                                      
+BAJA_DEFINITIVA_BIE (EJERCICIO,NRO_IDENT,NRO_REM_BAJA)                          
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000011_FK_IA;                                          
+CREATE INDEX RAFAM_0000000011_FK_IA ON                                          
+BAJA_PROVISORIA_BIE (NRO_IDENT)                                                 
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000012_FK_IA;                                          
+CREATE INDEX RAFAM_0000000012_FK_IA ON                                          
+BENEFICIARIOS (LOCA_POS)                                                        
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000013_FK_IA;                                          
+CREATE INDEX RAFAM_0000000013_FK_IA ON                                          
+BENEFICIARIOS (COD_PROV)                                                        
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000014_FK_IA;                                          
+CREATE INDEX RAFAM_0000000014_FK_IA ON                                          
+BENEFICIARIOS (MOTIVO)                                                          
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000015_FK_IA;                                          
+CREATE INDEX RAFAM_0000000015_FK_IA ON                                          
+BIENES_PUBLICOS (ESTADO_BIEN)                                                   
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000016_FK_IA;                                          
+CREATE INDEX RAFAM_0000000016_FK_IA ON                                          
+BIENES_PUBLICOS (MOTIVO_ANULA)                                                  
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO BIE_HISTO_INV_EST_BIE_FK_IA;                                     
+CREATE INDEX BIE_HISTO_INV_EST_BIE_FK_IA ON                                     
+BIE_HISTO_INVENT (ESTADO_APIB)                                                  
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000017_FK_IA;                                          
+CREATE INDEX RAFAM_0000000017_FK_IA ON                                          
+BOCA_RECAUDADORA_CONF (CODIGO)                                                  
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000018_FK_IA;                                          
+CREATE INDEX RAFAM_0000000018_FK_IA ON                                          
+CALCULO_MODIF (JURISDICCION)                                                    
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000019_FK_IA;                                          
+CREATE INDEX RAFAM_0000000019_FK_IA ON                                          
+CESIONARIOS (COD_BEN)                                                           
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000020_FK_IA;                                          
+CREATE INDEX RAFAM_0000000020_FK_IA ON                                          
+CESIONARIOS (MOTIVO)                                                            
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000021_FK_IA;                                          
+CREATE INDEX RAFAM_0000000021_FK_IA ON                                          
+COMPROBANTES (COD_BEN)                                                          
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000022_FK_IA;                                          
+CREATE INDEX RAFAM_0000000022_FK_IA ON                                          
+COMPROBANTES (COD_EMB,COD_BCE_ITEM)                                             
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO COM_EMPPARTPRE_FK_IA;                                            
+CREATE INDEX COM_EMPPARTPRE_FK_IA ON                                            
+COMISIONES (COD_EMP)                                                            
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000023_FK_IA;                                          
+CREATE INDEX RAFAM_0000000023_FK_IA ON                                          
+ING_COM_INMUEBLES (MOT_BAJA)                                                    
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000024_FK_IA;                                          
+CREATE INDEX RAFAM_0000000024_FK_IA ON                                          
+ING_CON_INMUEBLES (NRO_CONTRIB)                                                 
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000025_FK_IA;                                          
+CREATE INDEX RAFAM_0000000025_FK_IA ON                                          
+ING_CON_INMUEBLES (VINC_TIPO)                                                   
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000026_FK_IA;                                          
+CREATE INDEX RAFAM_0000000026_FK_IA ON                                          
+CONVENIOS_BANCARIOS (COD_BANCO)                                                 
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000027_FK_IA;                                          
+CREATE INDEX RAFAM_0000000027_FK_IA ON                                          
+CUENTAS_CESIONARIOS (MOTIVO)                                                    
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000028_FK_IA;                                          
+CREATE INDEX RAFAM_0000000028_FK_IA ON                                          
+CTA_CUENTAS (CONFIG_CHEQUE)                                                     
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000029_FK_IA;                                          
+CREATE INDEX RAFAM_0000000029_FK_IA ON                                          
+CUOTAS_INCISO (ANIO_PRESUP,JURISDICCION,CODIGO_FF)                              
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000030_FK_IA;                                          
+CREATE INDEX RAFAM_0000000030_FK_IA ON                                          
+CUOTAS_JURISDIC (JURISDICCION)                                                  
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO DATOS_PART_CONS_FK_IA;                                           
+CREATE INDEX DATOS_PART_CONS_FK_IA ON                                           
+DATOS_PART_CONS (COD_PROV)                                                      
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO DATOS_PART_CONT_FK_IA;                                           
+CREATE INDEX DATOS_PART_CONT_FK_IA ON                                           
+DATOS_PART_CONT (COD_PROV)                                                      
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000031_FK_IA;                                          
+CREATE INDEX RAFAM_0000000031_FK_IA ON                                          
+DEPENDENCIAS (PADRE)                                                            
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO DESCRIP_PROY_EST_PROG_FK_IA;                                     
+CREATE INDEX DESCRIP_PROY_EST_PROG_FK_IA ON                                     
+DESCRIP_PROY (ANIO_PRESUP,JURISDICCION,PROGRAMA,ACTIV_PROY,ACTIV_OBRA)          
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO DES_CODEMP_FK_IA;                                                
+CREATE INDEX DES_CODEMP_FK_IA ON                                                
+DESEMBOLSOS (COD_EMP)                                                           
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO EGRESOS_PROV_FK_IA;                                              
+CREATE INDEX EGRESOS_PROV_FK_IA ON                                              
+EGRESOS (COD_PROV)                                                              
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000032_FK_IA;                                          
+CREATE INDEX RAFAM_0000000032_FK_IA ON                                          
+EMBARGOS (MOTIVO)                                                               
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000033_FK_IA;                                          
+CREATE INDEX RAFAM_0000000033_FK_IA ON                                          
+ESCALAFONES (MODULO_HORARIO)                                                    
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ESTRUC_JURIS_FK_IA;                                              
+CREATE INDEX ESTRUC_JURIS_FK_IA ON                                              
+ESTRUC_PROG (JURISDICCION)                                                      
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ESTRUC_UNIEJEC_FK_IA;                                            
+CREATE INDEX ESTRUC_UNIEJEC_FK_IA ON                                            
+ESTRUC_PROG (CODIGO_UE)                                                         
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000034_FK_IA;                                          
+CREATE INDEX RAFAM_0000000034_FK_IA ON                                          
+ADJUDICACIONES_ITEMS (EJERCICIO,NRO_COTI,COD_PROV,ITEM_REAL,NRO_ALTER)          
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO FK_ING_PLANES_REC_CTOS_CC_IA;                                    
+CREATE INDEX FK_ING_PLANES_REC_CTOS_CC_IA ON                                    
+ING_PLANES_RECURSOS (RECURSO,CONCEPTO_CC_ANT)                                   
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000035_FK_IA;                                          
+CREATE INDEX RAFAM_0000000035_FK_IA ON                                          
+INV_BANCO_PROY (MOT_ANUL)                                                       
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000036_FK_IA;                                          
+CREATE INDEX RAFAM_0000000036_FK_IA ON                                          
+PED_COTIZACIONES_ITEMS (CLASE,TIPO)                                             
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000037_FK_IA;                                          
+CREATE INDEX RAFAM_0000000037_FK_IA ON                                          
+PED_ITEMS (CLASE,TIPO)                                                          
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO FORM4_JURIS_FK_IA;                                               
+CREATE INDEX FORM4_JURIS_FK_IA ON                                               
+FORMULARIO4 (JURISDICCION)                                                      
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO FORM8_ESTPRO_FK_IA;                                              
+CREATE INDEX FORM8_ESTPRO_FK_IA ON                                              
+FORMULARIO8 (ANIO_PRESUP,JURISDICCION,PROGRAMA,ACTIV_PROY,ACTIV_OBRA)           
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO FORM_JURIS_FK_IA;                                                
+CREATE INDEX FORM_JURIS_FK_IA ON                                                
+FORMULARIO1 (JURISDICCION)                                                      
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CCA_CEM_BOCA_FK_IA;                                          
+CREATE INDEX ING_CCA_CEM_BOCA_FK_IA ON                                          
+ING_CCA_CEM (BOCA_RECAUDA)                                                      
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CCA_CEM_CEMENTERIO_FK_IA;                                    
+CREATE INDEX ING_CCA_CEM_CEMENTERIO_FK_IA ON                                    
+ING_CCA_CEM (NRO_CUENTA)                                                        
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CCA_CEM_COMPR_CAB_FK_IA;                                     
+CREATE INDEX ING_CCA_CEM_COMPR_CAB_FK_IA ON                                     
+ING_CCA_CEM (TIPO_COMPROB,NRO_COMPROB)                                          
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CCA_CEM_CTOS_CC_FK_IA;                                       
+CREATE INDEX ING_CCA_CEM_CTOS_CC_FK_IA ON                                       
+ING_CCA_CEM (RECURSO,CONCEPTO_CC)                                               
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CCA_CEM_ESTADO_FK_IA;                                        
+CREATE INDEX ING_CCA_CEM_ESTADO_FK_IA ON                                        
+ING_CCA_CEM (ESTADO)                                                            
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CCA_CEM_ORIGEN_FK_IA;                                        
+CREATE INDEX ING_CCA_CEM_ORIGEN_FK_IA ON                                        
+ING_CCA_CEM (ORIGEN)                                                            
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CCA_CEM_RECURSOS_FK_IA;                                      
+CREATE INDEX ING_CCA_CEM_RECURSOS_FK_IA ON                                      
+ING_CCA_CEM (RECURSO)                                                           
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CCA_CEM_REC_LIQ_FK_IA;                                       
+CREATE INDEX ING_CCA_CEM_REC_LIQ_FK_IA ON                                       
+ING_CCA_CEM (RECURSO,ANIO,CUOTA)                                                
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CCA_CEM_SITUAC_FK_IA;                                        
+CREATE INDEX ING_CCA_CEM_SITUAC_FK_IA ON                                        
+ING_CCA_CEM (SITUACION)                                                         
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CCA_CEM_SI_FK_IA;                                            
+CREATE INDEX ING_CCA_CEM_SI_FK_IA ON                                            
+ING_CCA_CEM (INTIMACION)                                                        
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CCA_CEM_SL_FK_IA;                                            
+CREATE INDEX ING_CCA_CEM_SL_FK_IA ON                                            
+ING_CCA_CEM (LEGAL)                                                             
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CCA_CEM_SR_FK_IA;                                            
+CREATE INDEX ING_CCA_CEM_SR_FK_IA ON                                            
+ING_CCA_CEM (RECONOC)                                                           
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CCA_COM_COMERCIOS_FK_IA;                                     
+CREATE INDEX ING_CCA_COM_COMERCIOS_FK_IA ON                                     
+ING_CCA_COM (NRO_COMERCIO)                                                      
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CCA_COM_COMPR_CAB_FK_IA;                                     
+CREATE INDEX ING_CCA_COM_COMPR_CAB_FK_IA ON                                     
+ING_CCA_COM (TIPO_COMPROB,NRO_COMPROB)                                          
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CCA_COM_CTOS_CC_FK_IA;                                       
+CREATE INDEX ING_CCA_COM_CTOS_CC_FK_IA ON                                       
+ING_CCA_COM (RECURSO,CONCEPTO_CC)                                               
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CCA_COM_ESTADO_FK_IA;                                        
+CREATE INDEX ING_CCA_COM_ESTADO_FK_IA ON                                        
+ING_CCA_COM (ESTADO)                                                            
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CCA_COM_ORIGEN_FK_IA;                                        
+CREATE INDEX ING_CCA_COM_ORIGEN_FK_IA ON                                        
+ING_CCA_COM (ORIGEN)                                                            
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CCA_COM_RECURSOS_FK_IA;                                      
+CREATE INDEX ING_CCA_COM_RECURSOS_FK_IA ON                                      
+ING_CCA_COM (RECURSO)                                                           
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CCA_COM_REC_LIQ_FK_IA;                                       
+CREATE INDEX ING_CCA_COM_REC_LIQ_FK_IA ON                                       
+ING_CCA_COM (RECURSO,ANIO,CUOTA)                                                
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CCA_COM_SITUAC_FK_IA;                                        
+CREATE INDEX ING_CCA_COM_SITUAC_FK_IA ON                                        
+ING_CCA_COM (SITUACION)                                                         
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CCA_COM_SI_FK_IA;                                            
+CREATE INDEX ING_CCA_COM_SI_FK_IA ON                                            
+ING_CCA_COM (INTIMACION)                                                        
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CCA_COM_SL_FK_IA;                                            
+CREATE INDEX ING_CCA_COM_SL_FK_IA ON                                            
+ING_CCA_COM (LEGAL)                                                             
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CCA_COM_SR_FK_IA;                                            
+CREATE INDEX ING_CCA_COM_SR_FK_IA ON                                            
+ING_CCA_COM (RECONOC)                                                           
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CCA_CON_BOCA_FK_IA;                                          
+CREATE INDEX ING_CCA_CON_BOCA_FK_IA ON                                          
+ING_CCA_CON (BOCA_RECAUDA)                                                      
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CCA_CON_COMPR_CAB_FK_IA;                                     
+CREATE INDEX ING_CCA_CON_COMPR_CAB_FK_IA ON                                     
+ING_CCA_CON (TIPO_COMPROB,NRO_COMPROB)                                          
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CCA_CON_CONTRIB_FK_IA;                                       
+CREATE INDEX ING_CCA_CON_CONTRIB_FK_IA ON                                       
+ING_CCA_CON (NRO_CONTRIB)                                                       
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CCA_CON_CTOS_CC_FK_IA;                                       
+CREATE INDEX ING_CCA_CON_CTOS_CC_FK_IA ON                                       
+ING_CCA_CON (RECURSO,CONCEPTO_CC)                                               
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CCA_CON_ESTADO_FK_IA;                                        
+CREATE INDEX ING_CCA_CON_ESTADO_FK_IA ON                                        
+ING_CCA_CON (ESTADO)                                                            
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CCA_CON_ORIGEN_FK_IA;                                        
+CREATE INDEX ING_CCA_CON_ORIGEN_FK_IA ON                                        
+ING_CCA_CON (ORIGEN)                                                            
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CCA_CON_RECURSOS_FK_IA;                                      
+CREATE INDEX ING_CCA_CON_RECURSOS_FK_IA ON                                      
+ING_CCA_CON (RECURSO)                                                           
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CCA_CON_REC_LIQ_FK_IA;                                       
+CREATE INDEX ING_CCA_CON_REC_LIQ_FK_IA ON                                       
+ING_CCA_CON (RECURSO,ANIO,CUOTA)                                                
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CCA_CON_SITUAC_FK_IA;                                        
+CREATE INDEX ING_CCA_CON_SITUAC_FK_IA ON                                        
+ING_CCA_CON (SITUACION)                                                         
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CCA_CON_SI_FK_IA;                                            
+CREATE INDEX ING_CCA_CON_SI_FK_IA ON                                            
+ING_CCA_CON (INTIMACION)                                                        
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CCA_CON_SL_FK_IA;                                            
+CREATE INDEX ING_CCA_CON_SL_FK_IA ON                                            
+ING_CCA_CON (LEGAL)                                                             
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CCA_CON_SR_FK_IA;                                            
+CREATE INDEX ING_CCA_CON_SR_FK_IA ON                                            
+ING_CCA_CON (RECONOC)                                                           
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CCA_INM_BOCA_FK_IA;                                          
+CREATE INDEX ING_CCA_INM_BOCA_FK_IA ON                                          
+ING_CCA_INM (BOCA_RECAUDA)                                                      
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CCA_INM_COMPR_CAB_FK_IA;                                     
+CREATE INDEX ING_CCA_INM_COMPR_CAB_FK_IA ON                                     
+ING_CCA_INM (TIPO_COMPROB,NRO_COMPROB)                                          
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CCA_INM_CTOS_CC_FK_IA;                                       
+CREATE INDEX ING_CCA_INM_CTOS_CC_FK_IA ON                                       
+ING_CCA_INM (RECURSO,CONCEPTO_CC)                                               
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CCA_INM_ESTADO_FK_IA;                                        
+CREATE INDEX ING_CCA_INM_ESTADO_FK_IA ON                                        
+ING_CCA_INM (ESTADO)                                                            
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CCA_INM_INMUEBLES_FK_IA;                                     
+CREATE INDEX ING_CCA_INM_INMUEBLES_FK_IA ON                                     
+ING_CCA_INM (NRO_INMUEBLE)                                                      
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CCA_INM_ORIGEN_FK_IA;                                        
+CREATE INDEX ING_CCA_INM_ORIGEN_FK_IA ON                                        
+ING_CCA_INM (ORIGEN)                                                            
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CCA_INM_RECURSOS_FK_IA;                                      
+CREATE INDEX ING_CCA_INM_RECURSOS_FK_IA ON                                      
+ING_CCA_INM (RECURSO)                                                           
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CCA_INM_REC_LIQ_FK_IA;                                       
+CREATE INDEX ING_CCA_INM_REC_LIQ_FK_IA ON                                       
+ING_CCA_INM (RECURSO,ANIO,CUOTA)                                                
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CCA_INM_SITUAC_FK_IA;                                        
+CREATE INDEX ING_CCA_INM_SITUAC_FK_IA ON                                        
+ING_CCA_INM (SITUACION)                                                         
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CCA_INM_SI_FK_IA;                                            
+CREATE INDEX ING_CCA_INM_SI_FK_IA ON                                            
+ING_CCA_INM (INTIMACION)                                                        
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CCA_INM_SL_FK_IA;                                            
+CREATE INDEX ING_CCA_INM_SL_FK_IA ON                                            
+ING_CCA_INM (LEGAL)                                                             
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CCA_INM_SR_FK_IA;                                            
+CREATE INDEX ING_CCA_INM_SR_FK_IA ON                                            
+ING_CCA_INM (RECONOC)                                                           
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CCA_ROD_BOCA_FK_IA;                                          
+CREATE INDEX ING_CCA_ROD_BOCA_FK_IA ON                                          
+ING_CCA_ROD (BOCA_RECAUDA)                                                      
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CCA_ROD_COMPR_CAB_FK_IA;                                     
+CREATE INDEX ING_CCA_ROD_COMPR_CAB_FK_IA ON                                     
+ING_CCA_ROD (TIPO_COMPROB,NRO_COMPROB)                                          
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CCA_ROD_CTOS_CC_FK_IA;                                       
+CREATE INDEX ING_CCA_ROD_CTOS_CC_FK_IA ON                                       
+ING_CCA_ROD (RECURSO,CONCEPTO_CC)                                               
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CCA_ROD_ESTADO_FK_IA;                                        
+CREATE INDEX ING_CCA_ROD_ESTADO_FK_IA ON                                        
+ING_CCA_ROD (ESTADO)                                                            
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CCA_ROD_ORIGEN_FK_IA;                                        
+CREATE INDEX ING_CCA_ROD_ORIGEN_FK_IA ON                                        
+ING_CCA_ROD (ORIGEN)                                                            
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CCA_ROD_RECURSOS_FK_IA;                                      
+CREATE INDEX ING_CCA_ROD_RECURSOS_FK_IA ON                                      
+ING_CCA_ROD (RECURSO)                                                           
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CCA_ROD_REC_LIQ_FK_IA;                                       
+CREATE INDEX ING_CCA_ROD_REC_LIQ_FK_IA ON                                       
+ING_CCA_ROD (RECURSO,ANIO,CUOTA)                                                
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CCA_ROD_RODADOS_FK_IA;                                       
+CREATE INDEX ING_CCA_ROD_RODADOS_FK_IA ON                                       
+ING_CCA_ROD (NRO_RODADO)                                                        
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CCA_ROD_SITUAC_FK_IA;                                        
+CREATE INDEX ING_CCA_ROD_SITUAC_FK_IA ON                                        
+ING_CCA_ROD (SITUACION)                                                         
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CCA_ROD_SI_FK_IA;                                            
+CREATE INDEX ING_CCA_ROD_SI_FK_IA ON                                            
+ING_CCA_ROD (INTIMACION)                                                        
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CCA_ROD_SL_FK_IA;                                            
+CREATE INDEX ING_CCA_ROD_SL_FK_IA ON                                            
+ING_CCA_ROD (LEGAL)                                                             
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CCA_ROD_SR_FK_IA;                                            
+CREATE INDEX ING_CCA_ROD_SR_FK_IA ON                                            
+ING_CCA_ROD (RECONOC)                                                           
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CC_CEM_CEMENTERIO_FK_IA;                                     
+CREATE INDEX ING_CC_CEM_CEMENTERIO_FK_IA ON                                     
+ING_CC_CEM (NRO_CUENTA)                                                         
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CC_CEM_COMPR_CAB_FK_IA;                                      
+CREATE INDEX ING_CC_CEM_COMPR_CAB_FK_IA ON                                      
+ING_CC_CEM (TIPO_COMPROB,NRO_COMPROB)                                           
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CC_CEM_CTOS_CC_FK_IA;                                        
+CREATE INDEX ING_CC_CEM_CTOS_CC_FK_IA ON                                        
+ING_CC_CEM (RECURSO,CONCEPTO_CC)                                                
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CC_CEM_ESTADO_FK_IA;                                         
+CREATE INDEX ING_CC_CEM_ESTADO_FK_IA ON                                         
+ING_CC_CEM (ESTADO)                                                             
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CC_CEM_ORIGEN_FK_IA;                                         
+CREATE INDEX ING_CC_CEM_ORIGEN_FK_IA ON                                         
+ING_CC_CEM (ORIGEN)                                                             
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CC_CEM_RECURSOS_FK_IA;                                       
+CREATE INDEX ING_CC_CEM_RECURSOS_FK_IA ON                                       
+ING_CC_CEM (RECURSO)                                                            
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CC_CEM_REC_LIQ_FK_IA;                                        
+CREATE INDEX ING_CC_CEM_REC_LIQ_FK_IA ON                                        
+ING_CC_CEM (RECURSO,ANIO,CUOTA)                                                 
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CC_CEM_SITUAC_FK_IA;                                         
+CREATE INDEX ING_CC_CEM_SITUAC_FK_IA ON                                         
+ING_CC_CEM (SITUACION)                                                          
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CC_CEM_SI_FK_IA;                                             
+CREATE INDEX ING_CC_CEM_SI_FK_IA ON                                             
+ING_CC_CEM (INTIMACION)                                                         
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CC_CEM_SL_FK_IA;                                             
+CREATE INDEX ING_CC_CEM_SL_FK_IA ON                                             
+ING_CC_CEM (LEGAL)                                                              
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CC_CEM_SR_FK_IA;                                             
+CREATE INDEX ING_CC_CEM_SR_FK_IA ON                                             
+ING_CC_CEM (RECONOC)                                                            
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CC_COM_COMERCIOS_FK_IA;                                      
+CREATE INDEX ING_CC_COM_COMERCIOS_FK_IA ON                                      
+ING_CC_COM (NRO_COMERCIO)                                                       
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CC_COM_COMPR_CAB_FK_IA;                                      
+CREATE INDEX ING_CC_COM_COMPR_CAB_FK_IA ON                                      
+ING_CC_COM (TIPO_COMPROB,NRO_COMPROB)                                           
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CC_COM_CTOS_CC_FK_IA;                                        
+CREATE INDEX ING_CC_COM_CTOS_CC_FK_IA ON                                        
+ING_CC_COM (RECURSO,CONCEPTO_CC)                                                
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CC_COM_ESTADO_FK_IA;                                         
+CREATE INDEX ING_CC_COM_ESTADO_FK_IA ON                                         
+ING_CC_COM (ESTADO)                                                             
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CC_COM_ORIGEN_FK_IA;                                         
+CREATE INDEX ING_CC_COM_ORIGEN_FK_IA ON                                         
+ING_CC_COM (ORIGEN)                                                             
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CC_COM_RECURSOS_FK_IA;                                       
+CREATE INDEX ING_CC_COM_RECURSOS_FK_IA ON                                       
+ING_CC_COM (RECURSO)                                                            
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CC_COM_REC_LIQ_FK_IA;                                        
+CREATE INDEX ING_CC_COM_REC_LIQ_FK_IA ON                                        
+ING_CC_COM (RECURSO,ANIO,CUOTA)                                                 
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CC_COM_SITUAC_FK_IA;                                         
+CREATE INDEX ING_CC_COM_SITUAC_FK_IA ON                                         
+ING_CC_COM (SITUACION)                                                          
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CC_COM_SI_FK_IA;                                             
+CREATE INDEX ING_CC_COM_SI_FK_IA ON                                             
+ING_CC_COM (INTIMACION)                                                         
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CC_COM_SL_FK_IA;                                             
+CREATE INDEX ING_CC_COM_SL_FK_IA ON                                             
+ING_CC_COM (LEGAL)                                                              
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CC_COM_SR_FK_IA;                                             
+CREATE INDEX ING_CC_COM_SR_FK_IA ON                                             
+ING_CC_COM (RECONOC)                                                            
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CC_CON_COMPR_CAB_FK_IA;                                      
+CREATE INDEX ING_CC_CON_COMPR_CAB_FK_IA ON                                      
+ING_CC_CON (TIPO_COMPROB,NRO_COMPROB)                                           
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CC_CON_CONTRIB_FK_IA;                                        
+CREATE INDEX ING_CC_CON_CONTRIB_FK_IA ON                                        
+ING_CC_CON (NRO_CONTRIB)                                                        
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CC_CON_CTOS_CC_FK_IA;                                        
+CREATE INDEX ING_CC_CON_CTOS_CC_FK_IA ON                                        
+ING_CC_CON (RECURSO,CONCEPTO_CC)                                                
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CC_CON_ESTADO_FK_IA;                                         
+CREATE INDEX ING_CC_CON_ESTADO_FK_IA ON                                         
+ING_CC_CON (ESTADO)                                                             
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CC_CON_ORIGEN_FK_IA;                                         
+CREATE INDEX ING_CC_CON_ORIGEN_FK_IA ON                                         
+ING_CC_CON (ORIGEN)                                                             
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CC_CON_RECURSOS_FK_IA;                                       
+CREATE INDEX ING_CC_CON_RECURSOS_FK_IA ON                                       
+ING_CC_CON (RECURSO)                                                            
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CC_CON_REC_LIQ_FK_IA;                                        
+CREATE INDEX ING_CC_CON_REC_LIQ_FK_IA ON                                        
+ING_CC_CON (RECURSO,ANIO,CUOTA)                                                 
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CC_CON_SITUAC_FK_IA;                                         
+CREATE INDEX ING_CC_CON_SITUAC_FK_IA ON                                         
+ING_CC_CON (SITUACION)                                                          
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CC_CON_SI_FK_IA;                                             
+CREATE INDEX ING_CC_CON_SI_FK_IA ON                                             
+ING_CC_CON (INTIMACION)                                                         
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CC_CON_SL_FK_IA;                                             
+CREATE INDEX ING_CC_CON_SL_FK_IA ON                                             
+ING_CC_CON (LEGAL)                                                              
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CC_CON_SR_FK_IA;                                             
+CREATE INDEX ING_CC_CON_SR_FK_IA ON                                             
+ING_CC_CON (RECONOC)                                                            
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CC_INM_COMPR_CAB_FK_IA;                                      
+CREATE INDEX ING_CC_INM_COMPR_CAB_FK_IA ON                                      
+ING_CC_INM (TIPO_COMPROB,NRO_COMPROB)                                           
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CC_INM_CTOS_CC_FK_IA;                                        
+CREATE INDEX ING_CC_INM_CTOS_CC_FK_IA ON                                        
+ING_CC_INM (RECURSO,CONCEPTO_CC)                                                
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CC_INM_ESTADO_FK_IA;                                         
+CREATE INDEX ING_CC_INM_ESTADO_FK_IA ON                                         
+ING_CC_INM (ESTADO)                                                             
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CC_INM_INMUEBLES_FK_IA;                                      
+CREATE INDEX ING_CC_INM_INMUEBLES_FK_IA ON                                      
+ING_CC_INM (NRO_INMUEBLE)                                                       
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CC_INM_ORIGEN_FK_IA;                                         
+CREATE INDEX ING_CC_INM_ORIGEN_FK_IA ON                                         
+ING_CC_INM (ORIGEN)                                                             
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CC_INM_RECURSOS_FK_IA;                                       
+CREATE INDEX ING_CC_INM_RECURSOS_FK_IA ON                                       
+ING_CC_INM (RECURSO)                                                            
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CC_INM_REC_LIQ_FK_IA;                                        
+CREATE INDEX ING_CC_INM_REC_LIQ_FK_IA ON                                        
+ING_CC_INM (RECURSO,ANIO,CUOTA)                                                 
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CC_INM_SITUAC_FK_IA;                                         
+CREATE INDEX ING_CC_INM_SITUAC_FK_IA ON                                         
+ING_CC_INM (SITUACION)                                                          
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CC_INM_SI_FK_IA;                                             
+CREATE INDEX ING_CC_INM_SI_FK_IA ON                                             
+ING_CC_INM (INTIMACION)                                                         
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CC_INM_SL_FK_IA;                                             
+CREATE INDEX ING_CC_INM_SL_FK_IA ON                                             
+ING_CC_INM (LEGAL)                                                              
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CC_INM_SR_FK_IA;                                             
+CREATE INDEX ING_CC_INM_SR_FK_IA ON                                             
+ING_CC_INM (RECONOC)                                                            
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CC_ROD_COMPR_CAB_FK_IA;                                      
+CREATE INDEX ING_CC_ROD_COMPR_CAB_FK_IA ON                                      
+ING_CC_ROD (TIPO_COMPROB,NRO_COMPROB)                                           
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CC_ROD_CTOS_CC_FK_IA;                                        
+CREATE INDEX ING_CC_ROD_CTOS_CC_FK_IA ON                                        
+ING_CC_ROD (RECURSO,CONCEPTO_CC)                                                
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CC_ROD_ESTADO_FK_IA;                                         
+CREATE INDEX ING_CC_ROD_ESTADO_FK_IA ON                                         
+ING_CC_ROD (ESTADO)                                                             
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CC_ROD_ORIGEN_FK_IA;                                         
+CREATE INDEX ING_CC_ROD_ORIGEN_FK_IA ON                                         
+ING_CC_ROD (ORIGEN)                                                             
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CC_ROD_RECURSOS_FK_IA;                                       
+CREATE INDEX ING_CC_ROD_RECURSOS_FK_IA ON                                       
+ING_CC_ROD (RECURSO)                                                            
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CC_ROD_REC_LIQ_FK_IA;                                        
+CREATE INDEX ING_CC_ROD_REC_LIQ_FK_IA ON                                        
+ING_CC_ROD (RECURSO,ANIO,CUOTA)                                                 
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CC_ROD_RODADOS_FK_IA;                                        
+CREATE INDEX ING_CC_ROD_RODADOS_FK_IA ON                                        
+ING_CC_ROD (NRO_RODADO)                                                         
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CC_ROD_SITUAC_FK_IA;                                         
+CREATE INDEX ING_CC_ROD_SITUAC_FK_IA ON                                         
+ING_CC_ROD (SITUACION)                                                          
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CC_ROD_SI_FK_IA;                                             
+CREATE INDEX ING_CC_ROD_SI_FK_IA ON                                             
+ING_CC_ROD (INTIMACION)                                                         
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CC_ROD_SL_FK_IA;                                             
+CREATE INDEX ING_CC_ROD_SL_FK_IA ON                                             
+ING_CC_ROD (LEGAL)                                                              
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CC_ROD_SR_FK_IA;                                             
+CREATE INDEX ING_CC_ROD_SR_FK_IA ON                                             
+ING_CC_ROD (RECONOC)                                                            
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000038_FK_IA;                                          
+CREATE INDEX RAFAM_0000000038_FK_IA ON                                          
+ING_COMPR_CAB_CC (TIPO_COMPROB)                                                 
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000039_FK_IA;                                          
+CREATE INDEX RAFAM_0000000039_FK_IA ON                                          
+ING_COMPR_CAB_CC (TIPO_IMP)                                                     
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000040_FK_IA;                                          
+CREATE INDEX RAFAM_0000000040_FK_IA ON                                          
+ING_COMPR_CAB (TIPO_COMPROB)                                                    
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000041_FK_IA;                                          
+CREATE INDEX RAFAM_0000000041_FK_IA ON                                          
+ING_COMPR_CAB (TIPO_IMP)                                                        
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000042_FK_IA;                                          
+CREATE INDEX RAFAM_0000000042_FK_IA ON                                          
+ING_COMPR_PP (TIPO_COMPROB)                                                     
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000043_FK_IA;                                          
+CREATE INDEX RAFAM_0000000043_FK_IA ON                                          
+ING_CONTRIBUYENTES (COD_LOC,COD_POSTAL)                                         
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000044_FK_IA;                                          
+CREATE INDEX RAFAM_0000000044_FK_IA ON                                          
+ING_CONTRIBUYENTES (DP_COD_PRO)                                                 
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_CONVERSION_TASAS_REC_FK_IA;                                  
+CREATE INDEX ING_CONVERSION_TASAS_REC_FK_IA ON                                  
+ING_CONVERSION_TASAS (CODIGO)                                                   
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000045_FK_IA;                                          
+CREATE INDEX RAFAM_0000000045_FK_IA ON                                          
+ING_CON_CEMENTERIO (MOT_BAJA)                                                   
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000046_FK_IA;                                          
+CREATE INDEX RAFAM_0000000046_FK_IA ON                                          
+ING_CON_COMERCIOS (MOT_BAJA)                                                    
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000047_FK_IA;                                          
+CREATE INDEX RAFAM_0000000047_FK_IA ON                                          
+ING_CON_CONTRIBUYENTES (NRO_CONTR)                                              
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000048_FK_IA;                                          
+CREATE INDEX RAFAM_0000000048_FK_IA ON                                          
+ING_CON_CONTRIBUYENTES (NRO_CONTRIB)                                            
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000049_FK_IA;                                          
+CREATE INDEX RAFAM_0000000049_FK_IA ON                                          
+ING_CON_CONTRIBUYENTES (MOT_BAJA)                                               
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000050_FK_IA;                                          
+CREATE INDEX RAFAM_0000000050_FK_IA ON                                          
+ING_CON_CONTRIBUYENTES (VINC_TIPO)                                              
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000051_FK_IA;                                          
+CREATE INDEX RAFAM_0000000051_FK_IA ON                                          
+ING_CON_RODADOS (MOT_BAJA)                                                      
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000052_FK_IA;                                          
+CREATE INDEX RAFAM_0000000052_FK_IA ON                                          
+ING_CON_RODADOS (VINC_TIPO)                                                     
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000053_FK_IA;                                          
+CREATE INDEX RAFAM_0000000053_FK_IA ON                                          
+ING_DEBITO_AUTOMATICO_COM (TIPO_COMPROB,NRO_COMPROB)                            
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000054_FK_IA;                                          
+CREATE INDEX RAFAM_0000000054_FK_IA ON                                          
+ING_DEBITO_AUTOMATICO_CON (TIPO_COMPROB,NRO_COMPROB)                            
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000055_FK_IA;                                          
+CREATE INDEX RAFAM_0000000055_FK_IA ON                                          
+ING_DEBITO_AUTOMATICO_INM (TIPO_COMPROB,NRO_COMPROB)                            
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000056_FK_IA;                                          
+CREATE INDEX RAFAM_0000000056_FK_IA ON                                          
+ING_DEBITO_AUTOMATICO_ROD (TIPO_COMPROB,NRO_COMPROB)                            
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000057_FK_IA;                                          
+CREATE INDEX RAFAM_0000000057_FK_IA ON                                          
+ING_DEBITO_AUTOMATICO_CEM (NRO_CONTRIB)                                         
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000058_FK_IA;                                          
+CREATE INDEX RAFAM_0000000058_FK_IA ON                                          
+ING_DEBITO_AUTOMATICO_CEM (COD_BANCO,CONVENIO)                                  
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000059_FK_IA;                                          
+CREATE INDEX RAFAM_0000000059_FK_IA ON                                          
+ING_DEBITO_AUTOMATICO_CEM (COD_BANCO)                                           
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000060_FK_IA;                                          
+CREATE INDEX RAFAM_0000000060_FK_IA ON                                          
+ING_DEBITO_AUTOMATICO_COM (NRO_CONTRIB)                                         
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000061_FK_IA;                                          
+CREATE INDEX RAFAM_0000000061_FK_IA ON                                          
+ING_DEBITO_AUTOMATICO_COM (COD_BANCO,CONVENIO)                                  
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000062_FK_IA;                                          
+CREATE INDEX RAFAM_0000000062_FK_IA ON                                          
+ING_DEBITO_AUTOMATICO_COM (COD_BANCO)                                           
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000063_FK_IA;                                          
+CREATE INDEX RAFAM_0000000063_FK_IA ON                                          
+ING_DEBITO_AUTOMATICO_CON (NRO_CONTRIB)                                         
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000064_FK_IA;                                          
+CREATE INDEX RAFAM_0000000064_FK_IA ON                                          
+ING_DEBITO_AUTOMATICO_CON (COD_BANCO,CONVENIO)                                  
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000065_FK_IA;                                          
+CREATE INDEX RAFAM_0000000065_FK_IA ON                                          
+ING_DEBITO_AUTOMATICO_CON (COD_BANCO)                                           
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000066_FK_IA;                                          
+CREATE INDEX RAFAM_0000000066_FK_IA ON                                          
+ING_DEBITO_AUTOMATICO_INM (NRO_CONTRIB)                                         
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000067_FK_IA;                                          
+CREATE INDEX RAFAM_0000000067_FK_IA ON                                          
+ING_DEBITO_AUTOMATICO_INM (COD_BANCO,CONVENIO)                                  
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000068_FK_IA;                                          
+CREATE INDEX RAFAM_0000000068_FK_IA ON                                          
+ING_DEBITO_AUTOMATICO_INM (COD_BANCO)                                           
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000069_FK_IA;                                          
+CREATE INDEX RAFAM_0000000069_FK_IA ON                                          
+ING_DEBITO_AUTOMATICO_ROD (NRO_CONTRIB)                                         
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000070_FK_IA;                                          
+CREATE INDEX RAFAM_0000000070_FK_IA ON                                          
+ING_DEBITO_AUTOMATICO_ROD (COD_BANCO,CONVENIO)                                  
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000071_FK_IA;                                          
+CREATE INDEX RAFAM_0000000071_FK_IA ON                                          
+ING_DEBITO_AUTOMATICO_ROD (COD_BANCO)                                           
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000072_FK_IA;                                          
+CREATE INDEX RAFAM_0000000072_FK_IA ON                                          
+ING_DEBITO_AUTOMATICO_CEM (TIPO_COMPROB,NRO_COMPROB)                            
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000073_FK_IA;                                          
+CREATE INDEX RAFAM_0000000073_FK_IA ON                                          
+ING_DISTRIBUCION_DET (TABLA,NOM_CAMPOFISICO)                                    
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000074_FK_IA;                                          
+CREATE INDEX RAFAM_0000000074_FK_IA ON                                          
+ING_DISTRIBUCION_DET (DISTRIBUCION)                                             
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000075_FK_IA;                                          
+CREATE INDEX RAFAM_0000000075_FK_IA ON                                          
+ING_DISTRIBUCION_REMESA (DISTRIBUCION)                                          
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000076_FK_IA;                                          
+CREATE INDEX RAFAM_0000000076_FK_IA ON                                          
+ING_DISTRIBUCION_REMESA (RECURSO)                                               
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000077_FK_IA;                                          
+CREATE INDEX RAFAM_0000000077_FK_IA ON                                          
+ING_DISTRIBUCION_REMESA (REMESA)                                                
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_PLANES_CAB_REC_FK_IA;                                        
+CREATE INDEX ING_PLANES_CAB_REC_FK_IA ON                                        
+ING_PLANES_CAB (RECURSO)                                                        
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_PLANES_METODOS_C_FK_IA;                                      
+CREATE INDEX ING_PLANES_METODOS_C_FK_IA ON                                      
+ING_PLANES (METODO)                                                             
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000078_FK_IA;                                          
+CREATE INDEX RAFAM_0000000078_FK_IA ON                                          
+ING_PLANES_METODOS (PROCEDIMIENTO)                                              
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_PLANES_OP_FUNC_FK_IA;                                        
+CREATE INDEX ING_PLANES_OP_FUNC_FK_IA ON                                        
+ING_PLANES (COND_DEUDA)                                                         
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_PLAN_ORI_CEM_CCA_FK_IA;                                      
+CREATE INDEX ING_PLAN_ORI_CEM_CCA_FK_IA ON                                      
+ING_PLANES_ORI_CEM (RECURSO,NRO_CUENTA,ANIO,CUOTA,ORDEN)                        
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_PLAN_ORI_COM_CCA_FK_IA;                                      
+CREATE INDEX ING_PLAN_ORI_COM_CCA_FK_IA ON                                      
+ING_PLANES_ORI_COM (RECURSO,NRO_COMERCIO,ANIO,CUOTA,ORDEN)                      
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_PLAN_ORI_CON_CCA_FK_IA;                                      
+CREATE INDEX ING_PLAN_ORI_CON_CCA_FK_IA ON                                      
+ING_PLANES_ORI_CON (RECURSO,NRO_CONTRIB,ANIO,CUOTA,ORDEN)                       
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_PLAN_ORI_INM_CCA_FK_IA;                                      
+CREATE INDEX ING_PLAN_ORI_INM_CCA_FK_IA ON                                      
+ING_PLANES_ORI_INM (RECURSO,NRO_INMUEBLE,ANIO,CUOTA,ORDEN)                      
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_PLAN_ORI_ROD_CCA_FK_IA;                                      
+CREATE INDEX ING_PLAN_ORI_ROD_CCA_FK_IA ON                                      
+ING_PLANES_ORI_ROD (RECURSO,NRO_RODADO,ANIO,CUOTA,ORDEN)                        
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_PLAN_REC_CTOS1_FK_IA;                                        
+CREATE INDEX ING_PLAN_REC_CTOS1_FK_IA ON                                        
+ING_PLANES_RECURSOS (RECURSO,CONCEPTO_CC)                                       
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_PLAN_REC_CTOS2_FK_IA;                                        
+CREATE INDEX ING_PLAN_REC_CTOS2_FK_IA ON                                        
+ING_PLANES_RECURSOS (RECURSO,CONCEPTO_CC_CRED)                                  
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_PLAN_REC_LIQ1_FK_IA;                                         
+CREATE INDEX ING_PLAN_REC_LIQ1_FK_IA ON                                         
+ING_PLANES_RECURSOS (RECURSO,ANIO_INI_INCL,CUOTA_INI_INCL)                      
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_PLAN_REC_LIQ2_FK_IA;                                         
+CREATE INDEX ING_PLAN_REC_LIQ2_FK_IA ON                                         
+ING_PLANES_RECURSOS (RECURSO,ANIO_INI_CANC,CUOTA_INI_CANC)                      
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_PLAN_REC_LIQ3_FK_IA;                                         
+CREATE INDEX ING_PLAN_REC_LIQ3_FK_IA ON                                         
+ING_PLANES_RECURSOS (RECURSO,ANIO_FIN_INCL,CUOTA_FIN_INCL)                      
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_PLAN_REC_LIQ4_FK_IA;                                         
+CREATE INDEX ING_PLAN_REC_LIQ4_FK_IA ON                                         
+ING_PLANES_RECURSOS (RECURSO,ANIO_FIN_CANC,CUOTA_FIN_CANC)                      
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_PLAN_REC_RECURSOS_FK_IA;                                     
+CREATE INDEX ING_PLAN_REC_RECURSOS_FK_IA ON                                     
+ING_PLANES_RECURSOS (RECURSO)                                                   
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000079_FK_IA;                                          
+CREATE INDEX RAFAM_0000000079_FK_IA ON                                          
+ING_RECAUDACION_CAB (TIPO_COBRO)                                                
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000080_FK_IA;                                          
+CREATE INDEX RAFAM_0000000080_FK_IA ON                                          
+ING_RECIBOS_MANUALES (BOCA_RECAUDA)                                             
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000081_FK_IA;                                          
+CREATE INDEX RAFAM_0000000081_FK_IA ON                                          
+ING_RECURSOS_CEM_CTOS_H (RECURSO,CONCEPTO)                                      
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_RECURSOS_CEM_REM_FK_IA;                                      
+CREATE INDEX ING_RECURSOS_CEM_REM_FK_IA ON                                      
+ING_RECURSOS_CEM (REMESA)                                                       
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000082_FK_IA;                                          
+CREATE INDEX RAFAM_0000000082_FK_IA ON                                          
+ING_RECURSOS_COM_CTOS_H (RECURSO,CONCEPTO)                                      
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_RECURSOS_COM_REM_FK_IA;                                      
+CREATE INDEX ING_RECURSOS_COM_REM_FK_IA ON                                      
+ING_RECURSOS_COM (REMESA)                                                       
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000083_FK_IA;                                          
+CREATE INDEX RAFAM_0000000083_FK_IA ON                                          
+ING_RECURSOS_CON_CTOS_H (RECURSO,CONCEPTO)                                      
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_RECURSOS_CON_REM_FK_IA;                                      
+CREATE INDEX ING_RECURSOS_CON_REM_FK_IA ON                                      
+ING_RECURSOS_CON (REMESA)                                                       
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000084_FK_IA;                                          
+CREATE INDEX RAFAM_0000000084_FK_IA ON                                          
+ING_RECURSOS_CTOS_CC_INGR (EJERCICIO,COD_INGRESO)                               
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000085_FK_IA;                                          
+CREATE INDEX RAFAM_0000000085_FK_IA ON                                          
+ING_RECURSOS_CTOS_CC_INGR (RECURSO,CONCEPTO_CC)                                 
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000086_FK_IA;                                          
+CREATE INDEX RAFAM_0000000086_FK_IA ON                                          
+ING_RECURSOS_CTOS_INGR (EJERCICIO,COD_INGRESO)                                  
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000087_FK_IA;                                          
+CREATE INDEX RAFAM_0000000087_FK_IA ON                                          
+ING_RECURSOS_CTOS_INGR (RECURSO,CONCEPTO)                                       
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000088_FK_IA;                                          
+CREATE INDEX RAFAM_0000000088_FK_IA ON                                          
+ING_RECURSOS_INM_CTOS_H (RECURSO,CONCEPTO)                                      
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_RECURSOS_INM_REM_FK_IA;                                      
+CREATE INDEX ING_RECURSOS_INM_REM_FK_IA ON                                      
+ING_RECURSOS_INM (REMESA)                                                       
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000089_FK_IA;                                          
+CREATE INDEX RAFAM_0000000089_FK_IA ON                                          
+ING_RECURSOS_ROD_CTOS_H (RECURSO,CONCEPTO)                                      
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO ING_RECURSOS_ROD_REM_FK_IA;                                      
+CREATE INDEX ING_RECURSOS_ROD_REM_FK_IA ON                                      
+ING_RECURSOS_ROD (REMESA)                                                       
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000090_FK_IA;                                          
+CREATE INDEX RAFAM_0000000090_FK_IA ON                                          
+ING_TIPO_DE_COMPROBANTE (GRUPO)                                                 
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000091_FK_IA;                                          
+CREATE INDEX RAFAM_0000000091_FK_IA ON                                          
+ING_TMP_TESORERIA_CLE (TRANSACCION,DOCU_TIPO,DOCU_NRO)                          
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000092_FK_IA;                                          
+CREATE INDEX RAFAM_0000000092_FK_IA ON                                          
+ING_TMP_TESORERIA_REC (TRANSACCION,DOCU_TIPO,DOCU_NRO)                          
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO INTMORA_CODEMP_FK_IA;                                            
+CREATE INDEX INTMORA_CODEMP_FK_IA ON                                            
+INTERESES_MORA (COD_EMP)                                                        
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO INT_CODEMP_FK_IA;                                                
+CREATE INDEX INT_CODEMP_FK_IA ON                                                
+INTERESES (COD_EMP)                                                             
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO INT_PG_CODEMP_FK_IA;                                             
+CREATE INDEX INT_PG_CODEMP_FK_IA ON                                             
+INTERESES_PG (COD_EMP)                                                          
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000093_FK_IA;                                          
+CREATE INDEX RAFAM_0000000093_FK_IA ON                                          
+INV_FI10_PROGRAMACION (EJERCICIO,CODIGO_PROY,ORDEN)                             
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000094_FK_IA;                                          
+CREATE INDEX RAFAM_0000000094_FK_IA ON                                          
+INV_FI12_FLUJO_CAJA (CONCEPTO)                                                  
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000095_FK_IA;                                          
+CREATE INDEX RAFAM_0000000095_FK_IA ON                                          
+INV_FI12_INDIC_ALCANCE (CONCEPTO)                                               
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000096_FK_IA;                                          
+CREATE INDEX RAFAM_0000000096_FK_IA ON                                          
+INV_FI12_INDIC_ALCANCE (CODIGO_UM)                                              
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000097_FK_IA;                                          
+CREATE INDEX RAFAM_0000000097_FK_IA ON                                          
+INV_FI5_INF_FECH (INFORME)                                                      
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000098_FK_IA;                                          
+CREATE INDEX RAFAM_0000000098_FK_IA ON                                          
+INV_FI6_ESTUDIOS (CODIGO_DEP_EST)                                               
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000099_FK_IA;                                          
+CREATE INDEX RAFAM_0000000099_FK_IA ON                                          
+INV_FI6_INDIC_ALCANCE (CODIGO_UM)                                               
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000100_FK_IA;                                          
+CREATE INDEX RAFAM_0000000100_FK_IA ON                                          
+INV_FI6_RESUL_EVAL_ECO (EJERCICIO,CODIGO_PROY,ORDEN)                            
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000101_FK_IA;                                          
+CREATE INDEX RAFAM_0000000101_FK_IA ON                                          
+INV_FI6_RESUL_EVAL_FINAN (EJERCICIO,CODIGO_PROY,ORDEN_FI6)                      
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000102_FK_IA;                                          
+CREATE INDEX RAFAM_0000000102_FK_IA ON                                          
+MATRIZ_GASTOS (EJERCICIO,DEV_DEBE)                                              
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000103_FK_IA;                                          
+CREATE INDEX RAFAM_0000000103_FK_IA ON                                          
+MATRIZ_GASTOS (EJERCICIO,DEV_HABER)                                             
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000104_FK_IA;                                          
+CREATE INDEX RAFAM_0000000104_FK_IA ON                                          
+MATRIZ_GASTOS (EJERCICIO,PAG_DEBE)                                              
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000105_FK_IA;                                          
+CREATE INDEX RAFAM_0000000105_FK_IA ON                                          
+MATRIZ_GASTOS (EJERCICIO,PAG_HABER)                                             
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000106_FK_IA;                                          
+CREATE INDEX RAFAM_0000000106_FK_IA ON                                          
+MATRIZ_DEDUC (EJERCICIO,DEV_DEBE)                                               
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000107_FK_IA;                                          
+CREATE INDEX RAFAM_0000000107_FK_IA ON                                          
+MATRIZ_DEDUC (EJERCICIO,DEV_HABER)                                              
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000108_FK_IA;                                          
+CREATE INDEX RAFAM_0000000108_FK_IA ON                                          
+MATRIZ_DEDUC (EJERCICIO,PAG_DEBE)                                               
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000109_FK_IA;                                          
+CREATE INDEX RAFAM_0000000109_FK_IA ON                                          
+MATRIZ_DEDUC (EJERCICIO,PAG_HABER)                                              
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO MATRIZ_GSIP_FK_IA;                                               
+CREATE INDEX MATRIZ_GSIP_FK_IA ON                                               
+MATRIZ_GSIP (EJERCICIO,CODIGO_AXT)                                              
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000110_FK_IA;                                          
+CREATE INDEX RAFAM_0000000110_FK_IA ON                                          
+MATRIZ_INGPR (EJERCICIO,DEV_DEBE)                                               
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000111_FK_IA;                                          
+CREATE INDEX RAFAM_0000000111_FK_IA ON                                          
+MATRIZ_INGPR (EJERCICIO,DEV_HABER)                                              
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000112_FK_IA;                                          
+CREATE INDEX RAFAM_0000000112_FK_IA ON                                          
+MATRIZ_INGPR (EJERCICIO,PER_DEBE)                                               
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000113_FK_IA;                                          
+CREATE INDEX RAFAM_0000000113_FK_IA ON                                          
+MATRIZ_INGPR (EJERCICIO,PER_HABER)                                              
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO METASPRO_JURIS_FK_IA;                                            
+CREATE INDEX METASPRO_JURIS_FK_IA ON                                            
+METAS_PROG (JURISDICCION)                                                       
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO METASPRO_METAS_FK_IA;                                            
+CREATE INDEX METASPRO_METAS_FK_IA ON                                            
+METAS_PROG (ANIO_PRESUP,CODIGO_META)                                            
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000114_FK_IA;                                          
+CREATE INDEX RAFAM_0000000114_FK_IA ON                                          
+MOV_PRES_REC_DEV (JURISDICCION)                                                 
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000115_FK_IA;                                          
+CREATE INDEX RAFAM_0000000115_FK_IA ON                                          
+MOV_REALES_GTOS_APAGAR (COD_EMP)                                                
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000116_FK_IA;                                          
+CREATE INDEX RAFAM_0000000116_FK_IA ON                                          
+MOV_REALES_GTOS_PAGADO (COD_EMP)                                                
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO MTOS_HIS_CODEMP_FK_IA;                                           
+CREATE INDEX MTOS_HIS_CODEMP_FK_IA ON                                           
+MONTOS_HISTORICOS (COD_EMP)                                                     
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000117_FK_IA;                                          
+CREATE INDEX RAFAM_0000000117_FK_IA ON                                          
+OPERACIONES_COLUMNAS (TABLA,NOM_CAMPOFISICO)                                    
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000118_FK_IA;                                          
+CREATE INDEX RAFAM_0000000118_FK_IA ON                                          
+OPERACIONES_CONSULTAS (SISTEMA)                                                 
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000119_FK_IA;                                          
+CREATE INDEX RAFAM_0000000119_FK_IA ON                                          
+OPERACIONES_FUNCIONES (SISTEMA)                                                 
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000120_FK_IA;                                          
+CREATE INDEX RAFAM_0000000120_FK_IA ON                                          
+ORDEN_DEVOL (EJERCICIO,ASIENTO_ANUL)                                            
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000121_FK_IA;                                          
+CREATE INDEX RAFAM_0000000121_FK_IA ON                                          
+ORDEN_DEVOL (FORMA_DE_PAGO)                                                     
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000122_FK_IA;                                          
+CREATE INDEX RAFAM_0000000122_FK_IA ON                                          
+ORDEN_PAGOEA (EJERCICIO,ASIENTO_ANUL)                                           
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000123_FK_IA;                                          
+CREATE INDEX RAFAM_0000000123_FK_IA ON                                          
+ORDEN_PAGOEA (JURISDICCION)                                                     
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000124_FK_IA;                                          
+CREATE INDEX RAFAM_0000000124_FK_IA ON                                          
+ORDEN_PAGO (JURISDICCION)                                                       
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000125_FK_IA;                                          
+CREATE INDEX RAFAM_0000000125_FK_IA ON                                          
+ORDEN_REINT (FORMA_DE_PAGO)                                                     
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000126_FK_IA;                                          
+CREATE INDEX RAFAM_0000000126_FK_IA ON                                          
+PED_COTIZACIONES (MANT_OFERTA)                                                  
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000127_FK_IA;                                          
+CREATE INDEX RAFAM_0000000127_FK_IA ON                                          
+PER_AGENTES_HIST (RELACION_LABORAL)                                             
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000128_FK_IA;                                          
+CREATE INDEX RAFAM_0000000128_FK_IA ON                                          
+PER_AGENTES_CONCEPTOS_H (CONCEPTO)                                              
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000129_FK_IA;                                          
+CREATE INDEX RAFAM_0000000129_FK_IA ON                                          
+PER_AGENTES_CONCEPTOS (CONCEPTO)                                                
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO PER_AGENTES_FREC_PAGOS_IA;                                       
+CREATE INDEX PER_AGENTES_FREC_PAGOS_IA ON                                       
+PER_AGENTES (FRECUENCIA_PAGO)                                                   
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000130_FK_IA;                                          
+CREATE INDEX RAFAM_0000000130_FK_IA ON                                          
+PER_AGENTES_HIST (DEPENDENCIA)                                                  
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000131_FK_IA;                                          
+CREATE INDEX RAFAM_0000000131_FK_IA ON                                          
+PER_AGENTES_HIST (TIPO_MOV)                                                     
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000132_FK_IA;                                          
+CREATE INDEX RAFAM_0000000132_FK_IA ON                                          
+PER_AGENTES_HS_EX (TIPO_EXTRA)                                                  
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO PER_AGENTES_LUGAR_PAGOS_IA;                                      
+CREATE INDEX PER_AGENTES_LUGAR_PAGOS_IA ON                                      
+PER_AGENTES (LUGAR_PAGO)                                                        
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000133_FK_IA;                                          
+CREATE INDEX RAFAM_0000000133_FK_IA ON                                          
+PER_AGENTES_MOVIMIENTOS (MOTIVO_BAJA)                                           
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000134_FK_IA;                                          
+CREATE INDEX RAFAM_0000000134_FK_IA ON                                          
+PER_AGENTES_MOVIMIENTOS (DEPENDENCIA)                                           
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000135_FK_IA;                                          
+CREATE INDEX RAFAM_0000000135_FK_IA ON                                          
+PER_AGENTES_MOVIMIENTOS (EJERCICIO,JURISDICCION,PROGRAMA,ACTIV_PROY,ACTIV_OBRA) 
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO PER_AGENTES_MOV_FUEN_FIN_FK_IA;                                  
+CREATE INDEX PER_AGENTES_MOV_FUEN_FIN_FK_IA ON                                  
+PER_AGENTES_MOVIMIENTOS (EJERCICIO,CODIGO_FF)                                   
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000136_FK_IA;                                          
+CREATE INDEX RAFAM_0000000136_FK_IA ON                                          
+PER_AGENTES_MOVIMIENTOS (TIPO_PLANTA)                                           
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO PER_AGENTES_PROVEEDORES_FK_IA;                                   
+CREATE INDEX PER_AGENTES_PROVEEDORES_FK_IA ON                                   
+PER_AGENTES (COD_PROV_INTERNO)                                                  
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO PER_AGENTES_RELAC_LAB_FK_IA;                                     
+CREATE INDEX PER_AGENTES_RELAC_LAB_FK_IA ON                                     
+PER_AGENTES (RELACION_LABORAL)                                                  
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000137_FK_IA;                                          
+CREATE INDEX RAFAM_0000000137_FK_IA ON                                          
+PER_AGENTES_MOVIMIENTOS (TIPO_MOV)                                              
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO PER_AGENTES_TIPO_RELAC_FK_IA;                                    
+CREATE INDEX PER_AGENTES_TIPO_RELAC_FK_IA ON                                    
+PER_AGENTES (TIPO_RELACION)                                                     
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO PER_BENEF_PREV_ENC_PREV_FK_IA;                                   
+CREATE INDEX PER_BENEF_PREV_ENC_PREV_FK_IA ON                                   
+PER_BENEF_PREV (ENCUADRE_PREV)                                                  
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000138_FK_IA;                                          
+CREATE INDEX RAFAM_0000000138_FK_IA ON                                          
+PER_CAB_GANANCIA_NETA (TIPO_LIQ,ANIO,MES,GRUPO_LIQ)                             
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000139_FK_IA;                                          
+CREATE INDEX RAFAM_0000000139_FK_IA ON                                          
+PER_CTAS_BENEFICIARIAS (TIPO_TARJETA)                                           
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000140_FK_IA;                                          
+CREATE INDEX RAFAM_0000000140_FK_IA ON                                          
+PER_CONCEPTOS_PASOS_PAR (TABLA,NOM_CAMPOFISICO)                                 
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000141_FK_IA;                                          
+CREATE INDEX RAFAM_0000000141_FK_IA ON                                          
+PER_CONCEPTOS_PASOS_PAR (FUNCION)                                               
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000142_FK_IA;                                          
+CREATE INDEX RAFAM_0000000142_FK_IA ON                                          
+PER_CONCEPTOS_PROVEEDOR (CONCEPTO)                                              
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000143_FK_IA;                                          
+CREATE INDEX RAFAM_0000000143_FK_IA ON                                          
+PER_CONCEPTOS_PROVEEDOR (PROVEEDOR)                                             
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000144_FK_IA;                                          
+CREATE INDEX RAFAM_0000000144_FK_IA ON                                          
+PER_DET_GANANCIA_NETA (LEGAJO,NRO_CARGO,ANIO,MES,TIPO_LIQ,GRUPO_LIQ)            
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000145_FK_IA;                                          
+CREATE INDEX RAFAM_0000000145_FK_IA ON                                          
+PER_DET_GANANCIA_NETA (CONCEPTO)                                                
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000146_FK_IA;                                          
+CREATE INDEX RAFAM_0000000146_FK_IA ON                                          
+PER_GRUPO_AGENTES (GRUPO_LIQ)                                                   
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000147_FK_IA;                                          
+CREATE INDEX RAFAM_0000000147_FK_IA ON                                          
+PER_LIQ_DET (GRUPO_LIQ,LEGAJO,NRO_CARGO)                                        
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000148_FK_IA;                                          
+CREATE INDEX RAFAM_0000000148_FK_IA ON                                          
+PER_LIQ_IMPUT (EJERCICIO,JURISDICCION,PROGRAMA,ACTIV_PROY,ACTIV_OBRA)           
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000149_FK_IA;                                          
+CREATE INDEX RAFAM_0000000149_FK_IA ON                                          
+PER_LIQ_IMPUT (COD_PROV)                                                        
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO PER_OSOCIALES_TIPO_OS_FK_IA;                                     
+CREATE INDEX PER_OSOCIALES_TIPO_OS_FK_IA ON                                     
+PER_OSOCIALES (OBRA_SOCIAL)                                                     
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO PER_POLIZAS_TIPO_SEGUROS_FK_IA;                                  
+CREATE INDEX PER_POLIZAS_TIPO_SEGUROS_FK_IA ON                                  
+PER_POLIZAS (TIPO_SEGURO)                                                       
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000150_FK_IA;                                          
+CREATE INDEX RAFAM_0000000150_FK_IA ON                                          
+PER_RECIBO_ORDEN_GRUPO (RECIBO_ORDEN)                                           
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000151_FK_IA;                                          
+CREATE INDEX RAFAM_0000000151_FK_IA ON                                          
+PER_RECIBO_ORDEN_ITEMS (RECIBO_ORDEN)                                           
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000152_FK_IA;                                          
+CREATE INDEX RAFAM_0000000152_FK_IA ON                                          
+PER_RECIBO_ORDEN_GRUPO (TIPO_LIQ)                                               
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000153_FK_IA;                                          
+CREATE INDEX RAFAM_0000000153_FK_IA ON                                          
+PER_SINDICATOS (SIND_MUTUAL)                                                    
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000154_FK_IA;                                          
+CREATE INDEX RAFAM_0000000154_FK_IA ON                                          
+PER_TIPO_LIQ_PERIODOS (ANIO,MES)                                                
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000155_FK_IA;                                          
+CREATE INDEX RAFAM_0000000155_FK_IA ON                                          
+PER_TIPO_LIQ_PERIODOS (TIPO_LIQ)                                                
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000156_FK_IA;                                          
+CREATE INDEX RAFAM_0000000156_FK_IA ON                                          
+PER_TMP_LIQ_RESUMEN_GRAL (EJERCICIO,JURISDICCION,PROGRAMA,ACTIV_PROY,ACTIV_OBRA)
+                                                                                
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000157_FK_IA;                                          
+CREATE INDEX RAFAM_0000000157_FK_IA ON                                          
+PLANTEL_BASICO (ANIO,JURISDICCION,PROGRAMA,ACTIV_PROY,ACTIV_OBRA)               
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000158_FK_IA;                                          
+CREATE INDEX RAFAM_0000000158_FK_IA ON                                          
+PLANTEL_BASICO (ANIO)                                                           
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000159_FK_IA;                                          
+CREATE INDEX RAFAM_0000000159_FK_IA ON                                          
+ING_RECURSOS_CEM_CTOS (RECURSO,NRO_CUENTA)                                      
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000160_FK_IA;                                          
+CREATE INDEX RAFAM_0000000160_FK_IA ON                                          
+ING_RECURSOS_CEM_CTOS (RECURSO,CONCEPTO)                                        
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000161_FK_IA;                                          
+CREATE INDEX RAFAM_0000000161_FK_IA ON                                          
+ING_RECURSOS_CEM_CTOS (RECURSO,ANIO_INICIAL,CUOTA_INICIAL)                      
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000162_FK_IA;                                          
+CREATE INDEX RAFAM_0000000162_FK_IA ON                                          
+ING_RECURSOS_COM_CTOS (RECURSO,NRO_COMERCIO)                                    
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000163_FK_IA;                                          
+CREATE INDEX RAFAM_0000000163_FK_IA ON                                          
+ING_RECURSOS_COM_CTOS (RECURSO,CONCEPTO)                                        
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000164_FK_IA;                                          
+CREATE INDEX RAFAM_0000000164_FK_IA ON                                          
+ING_RECURSOS_COM_CTOS (RECURSO,ANIO_INICIAL,CUOTA_INICIAL)                      
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000165_FK_IA;                                          
+CREATE INDEX RAFAM_0000000165_FK_IA ON                                          
+ING_RECURSOS_CON_CTOS (RECURSO,NRO_CONTRIB)                                     
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000166_FK_IA;                                          
+CREATE INDEX RAFAM_0000000166_FK_IA ON                                          
+ING_RECURSOS_CON_CTOS (RECURSO,CONCEPTO)                                        
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000167_FK_IA;                                          
+CREATE INDEX RAFAM_0000000167_FK_IA ON                                          
+ING_RECURSOS_CON_CTOS (RECURSO,ANIO_INICIAL,CUOTA_INICIAL)                      
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000168_FK_IA;                                          
+CREATE INDEX RAFAM_0000000168_FK_IA ON                                          
+ING_RECURSOS_CTOS_PASOS (RECURSO,CONCEPTO)                                      
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000169_FK_IA;                                          
+CREATE INDEX RAFAM_0000000169_FK_IA ON                                          
+ING_RECURSOS_CTOS_PASOS (OPERACION)                                             
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000170_FK_IA;                                          
+CREATE INDEX RAFAM_0000000170_FK_IA ON                                          
+ING_RECURSOS_CTOS_PASOS_PAR (TABLA,NOM_CAMPOFISICO)                             
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000171_FK_IA;                                          
+CREATE INDEX RAFAM_0000000171_FK_IA ON                                          
+ING_RECURSOS_CTOS_PASOS_PAR (FUNCION)                                           
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000172_FK_IA;                                          
+CREATE INDEX RAFAM_0000000172_FK_IA ON                                          
+ING_RECURSOS_CTOS_PASOS_PAR (RECURSO,CONCEPTO,PASO)                             
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000173_FK_IA;                                          
+CREATE INDEX RAFAM_0000000173_FK_IA ON                                          
+ING_RECURSOS_CTOS_PASOS_PAR (CONSULTA)                                          
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000174_FK_IA;                                          
+CREATE INDEX RAFAM_0000000174_FK_IA ON                                          
+ING_RECURSOS_CTOS_PASOS_PAR (RECURSO,VARIABLE)                                  
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000175_FK_IA;                                          
+CREATE INDEX RAFAM_0000000175_FK_IA ON                                          
+ING_RECURSOS_CTOS_PASOS (RECURSO,VARIABLE)                                      
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000176_FK_IA;                                          
+CREATE INDEX RAFAM_0000000176_FK_IA ON                                          
+ING_RECURSOS_INM_CTOS (RECURSO,CONCEPTO)                                        
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000177_FK_IA;                                          
+CREATE INDEX RAFAM_0000000177_FK_IA ON                                          
+ING_RECURSOS_INM_CTOS (RECURSO,NRO_INMUEBLE)                                    
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000178_FK_IA;                                          
+CREATE INDEX RAFAM_0000000178_FK_IA ON                                          
+ING_RECURSOS_INM_CTOS (RECURSO,ANIO_INICIAL,CUOTA_INICIAL)                      
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000179_FK_IA;                                          
+CREATE INDEX RAFAM_0000000179_FK_IA ON                                          
+ING_RECURSOS_ROD_CTOS (RECURSO,CONCEPTO)                                        
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000180_FK_IA;                                          
+CREATE INDEX RAFAM_0000000180_FK_IA ON                                          
+ING_RECURSOS_ROD_CTOS (RECURSO,ANIO_INICIAL,CUOTA_INICIAL)                      
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000181_FK_IA;                                          
+CREATE INDEX RAFAM_0000000181_FK_IA ON                                          
+ING_RECURSOS_ROD_CTOS (RECURSO,NRO_RODADO)                                      
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000182_FK_IA;                                          
+CREATE INDEX RAFAM_0000000182_FK_IA ON                                          
+ING_RECURSOS_VARIABLES (RECURSO)                                                
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000183_FK_IA;                                          
+CREATE INDEX RAFAM_0000000183_FK_IA ON                                          
+RECURSOS_PERCIBIDOS (EJERCICIO,CODIGO_AXT)                                      
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000184_FK_IA;                                          
+CREATE INDEX RAFAM_0000000184_FK_IA ON                                          
+RECURSOS_PERCIBIDOS (EJERCICIO,ORIGEN_TIPO,ORIGEN_NRO)                          
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000185_FK_IA;                                          
+CREATE INDEX RAFAM_0000000185_FK_IA ON                                          
+REGUL_CAMBIO_OCEA (EJERCICIO,ASIENTO)                                           
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000186_FK_IA;                                          
+CREATE INDEX RAFAM_0000000186_FK_IA ON                                          
+REGUL_CAMBIO_OCEA_IMPUT (EJERCICIO,INCISO,PAR_PRIN,PAR_PARC,PAR_SUBP)           
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000187_FK_IA;                                          
+CREATE INDEX RAFAM_0000000187_FK_IA ON                                          
+REGUL_CAMBIO_OCEA_IMPUT (EJERCICIO,JURISDICCION,PROGRAMA,ACTIV_PROY,ACTIV_OBRA) 
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000188_FK_IA;                                          
+CREATE INDEX RAFAM_0000000188_FK_IA ON                                          
+REGUL_GASTOS_EX (EJERCICIO,ASIENTO)                                             
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000189_FK_IA;                                          
+CREATE INDEX RAFAM_0000000189_FK_IA ON                                          
+REGUL_CORREC_RECUR (EJERCICIO,ASIENTO)                                          
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000190_FK_IA;                                          
+CREATE INDEX RAFAM_0000000190_FK_IA ON                                          
+REGUL_RECURSOS_EX (EJERCICIO,ASIENTO)                                           
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000191_FK_IA;                                          
+CREATE INDEX RAFAM_0000000191_FK_IA ON                                          
+REGUL_RETENCIONES (EJERCICIO,ASIENTO_ANUL)                                      
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000192_FK_IA;                                          
+CREATE INDEX RAFAM_0000000192_FK_IA ON                                          
+TES_RESUMENES_BANCARIOS_MOV (COMPROB_TIPO)                                      
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO SUBRUB_CATAGRUP_FK_IA;                                           
+CREATE INDEX SUBRUB_CATAGRUP_FK_IA ON                                           
+SUBRUBROS (CODIGO)                                                              
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000193_FK_IA;                                          
+CREATE INDEX RAFAM_0000000193_FK_IA ON                                          
+SUC_BANCARIAS (COD_BANCO)                                                       
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO TAREASMENUES_MENUES_FK_IA;                                       
+CREATE INDEX TAREASMENUES_MENUES_FK_IA ON                                       
+TAREAS_MENUES (SISTEMA,MENU,ITEM)                                               
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000194_FK_IA;                                          
+CREATE INDEX RAFAM_0000000194_FK_IA ON                                          
+TES_ASIEN_RENG_CONCILIACION (EJERCICIO,ASIENTO,ASIENTO_RENG)                    
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO TIPO_DE_ASIEN_TI_FK_IA;                                          
+CREATE INDEX TIPO_DE_ASIEN_TI_FK_IA ON                                          
+TIPO_DE_ORIGENES (CODIGO)                                                       
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000195_FK_IA;                                          
+CREATE INDEX RAFAM_0000000195_FK_IA ON                                          
+USUARIOS_JURISDICCIONES (JURISDICCION)                                          
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000196_FK_IA;                                          
+CREATE INDEX RAFAM_0000000196_FK_IA ON                                          
+USUARIOS_JURISDICCIONES (USUARIO)                                               
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO VALE_UR_FK_IA;                                                   
+CREATE INDEX VALE_UR_FK_IA ON                                                   
+VALE (UNI_RECEP)                                                                
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO RAFAM_0000000197_FK_IA;                                          
+CREATE INDEX RAFAM_0000000197_FK_IA ON                                          
+VALORES_AUDITADOS_ITEMS (SECUENCIA)                                             
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO VIGASCAR_GACAEC_FK_IA;                                           
+CREATE INDEX VIGASCAR_GACAEC_FK_IA ON                                           
+VI_GAS_CAR (CODIGO_GA_CA_EC)                                                    
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO VIRUBCAR_RECAEC_FK_IA;                                           
+CREATE INDEX VIRUBCAR_RECAEC_FK_IA ON                                           
+VI_RUB_CAR (CODIGO)                                                             
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO VIRUBORI_RECORI_FK_IA;                                           
+CREATE INDEX VIRUBORI_RECORI_FK_IA ON                                           
+VI_RUB_ORI (CODIGO)                                                             
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO VISUBRUB_PROV_FK_IA;                                             
+CREATE INDEX VISUBRUB_PROV_FK_IA ON                                             
+VI_SUBRUB_PROV (COD_PROV)                                                       
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                
+PROMPT CREANDO VISUBRUB_RUB_FK_IA;                                              
+CREATE INDEX VISUBRUB_RUB_FK_IA ON                                              
+VI_SUBRUB_PROV (CODIGO)                                                         
+ PCTFREE  10                                                                    
+ TABLESPACE INDICES;                                                            
+                                                                                

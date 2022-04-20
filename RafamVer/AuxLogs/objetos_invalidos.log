@@ -1,0 +1,40 @@
+
+OWNER_RAFAM.ING_GET_PERMISO_USR_RPT_LOCAL                     07/03/2022 19:41:16 FUNCTION                              
+OWNER_RAFAM.TES_EXPOR_CANCE_INTERBANKING                      07/03/2022 19:40:52 PROCEDURE                             
+OWNER_RAFAM.TES_IMPORTAR_EXTRACTO_BANC_V2                     07/03/2022 19:40:52 PROCEDURE                             
+OWNER_RAFAM.TES_EXPOR_CANCE_BECAS                             07/03/2022 19:40:52 PROCEDURE                             
+OWNER_RAFAM.PER_LIS_GENERA_TMP_FAM_BEN                        07/03/2022 19:40:52 PROCEDURE                             
+OWNER_RAFAM.PER_LIS_GENERA_TMP_LIC_SOL_AG                     07/03/2022 19:40:52 PROCEDURE                             
+OWNER_RAFAM.PER_LIS_GENERA_TMP_IMPUT_ERR                      07/03/2022 19:40:53 PROCEDURE                             
+OWNER_RAFAM.PER_LIS_GENERA_TMP_SOL_CUENTAS                    07/03/2022 19:40:53 PROCEDURE                             
+OWNER_RAFAM.PER_LIS_GENERA_TMP_AG_RECAT                       07/03/2022 19:40:53 PROCEDURE                             
+OWNER_RAFAM.PER_F_GANANCIA_DACUM_ESCALA                       07/03/2022 19:41:08 FUNCTION                              
+OWNER_RAFAM.CTR_GEN_TMP_STOCK                                 07/03/2022 19:40:46 PROCEDURE                             
+OWNER_RAFAM.PER_F_GANANCIA_IMP_RET                            07/03/2022 19:41:11 FUNCTION                              
+OWNER_RAFAM.PER_IMPORTAR_NOVEDADES_MASIVAS                    07/03/2022 19:40:45 PROCEDURE                             
+
+OWNER_RAFAM.PER_GRABA_DEDUCCION_GANANCIA                      07/03/2022 19:40:45 PROCEDURE                             
+OWNER_RAFAM.PER_LIQ_INS_DET                                   07/03/2022 19:40:39 PROCEDURE                             
+OWNER_RAFAM.PER_LIQ                                           07/03/2022 19:40:39 PROCEDURE                             
+OWNER_RAFAM.PER_LIS_CERT_SERVICIO                             07/03/2022 19:41:04 PROCEDURE                             
+OWNER_RAFAM.PER_LIS_CERT_SERVICIO_P2                          07/03/2022 19:41:04 PROCEDURE                             
+OWNER_RAFAM.PER_GEN_TMP_IE_IOMA_SUELDO                        07/03/2022 19:41:04 PROCEDURE                             
+OWNER_RAFAM.PER_GEN_TMP_IE_IOMA_DETALLE                       07/03/2022 19:41:04 PROCEDURE                             
+OWNER_RAFAM.PER_INFORME_IMPUT_CTA_VALIDO                      07/03/2022 19:41:04 PROCEDURE                             
+OWNER_RAFAM.PER_P_GANANCIAS_DECRETO336                        07/03/2022 19:41:04 PROCEDURE                             
+OWNER_RAFAM.PER_P_EXENTOS_DECRETO336                          07/03/2022 19:41:04 PROCEDURE                             
+OWNER_RAFAM.PER_P_GANANCIAS_RETDECRETO336                     07/03/2022 19:41:04 PROCEDURE                             
+OWNER_RAFAM.PER_P_CALC_GAN_DECRETO336_GRID                    07/03/2022 19:41:04 PROCEDURE                             
+OWNER_RAFAM.PER_GRID_GAN_LEERXML                              07/03/2022 19:41:04 PROCEDURE                             
+
+OWNER_RAFAM.PER_P_GRID_GCIAS_GANREM                           07/03/2022 19:41:05 PROCEDURE                             
+OWNER_RAFAM.PER_P_GRID_GCIAS_CALCULO                          07/03/2022 19:41:05 PROCEDURE                             
+OWNER_RAFAM.PER_F_MENORBRUTO_GANDECRETO336                    07/03/2022 19:41:05 FUNCTION                              
+OWNER_RAFAM.ING_F_ROD_CALC_X_VAL_ARBA                         07/03/2022 19:41:05 FUNCTION                              
+OWNER_RAFAM.PER_GET_PERMISO_USR_RPT_LOCAL                     07/03/2022 19:41:05 FUNCTION                              
+OWNER_RAFAM.PER_F_CANTMESES_GANDECRETO336                     07/03/2022 19:41:05 FUNCTION                              
+OWNER_RAFAM.TES_OTB_ACUMULA                                   07/03/2022 19:40:35 PROCEDURE                             
+OWNER_RAFAM.PK_ROD_MSP                                        18/04/2022 09:04:35 PACKAGE BODY                          
+OWNER_RAFAM.PCKGRIDRAFAM                                      07/03/2022 19:41:19 PACKAGE                               
+OWNER_RAFAM.PCKGRIDRAFAM                                      07/03/2022 19:41:26 PACKAGE BODY                          
+OWNER_RAFAM.GRID_TIU_LEGAJOS                                  07/03/2022 19:42:31 TRIGGER                               
